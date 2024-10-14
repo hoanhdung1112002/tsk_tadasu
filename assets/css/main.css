@@ -444,7 +444,18 @@ main {
   line-height: 46px;
   letter-spacing: 1.54px;
 }
-.privacy-content .text-box p:last-child {
+.privacy-content .text-box p span {
+  margin-top: 10px;
+  display: inline-block;
+  color: #373445;
+  font-family: "A P-OTF Ryumin Pr6N";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0.9px;
+}
+.privacy-content .text-box p:nth-child(2),
+.privacy-content .text-box p:nth-child(3) {
   margin: 0;
   color: #373445;
   font-size: 18px;
@@ -452,10 +463,14 @@ main {
   line-height: 29px;
   letter-spacing: 0.9px;
 }
+.privacy-content .text-box p:nth-child(3) {
+  margin-top: 16px;
+}
 .privacy-content .text-box > ul {
   list-style-type: decimal;
   margin-left: 20px;
   padding-left: 10px;
+  margin-top: 13px;
 }
 .privacy-content .text-box > ul li {
   color: #373445;
