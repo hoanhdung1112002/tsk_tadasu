@@ -1,0 +1,20 @@
+.company-content {
+    max-width: 1120px;
+    margin: 0 auto;
+    h1 {
+        margin-bottom: 98px;
+    }
+    p {
+        margin-bottom: 16px;
+        color: #373445;
+        font-family: "A P-OTF Ryumin Pr6N";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 29px;
+        letter-spacing: 0.9px;
+    }
+    p:nth-of-type(5){
+        letter-spacing: 0.6px;
+    }
+}
+

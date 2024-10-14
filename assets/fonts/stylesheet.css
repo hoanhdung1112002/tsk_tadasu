@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'A P-OTF Ryumin Pr6N';
+    src: url('RyuminPro-Regular-AlphaNum.woff2') format('woff2'),
+        url('RyuminPro-Regular-AlphaNum.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

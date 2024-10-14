@@ -1,0 +1,495 @@
+@charset "UTF-8";
+/* general */
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+  background: #FFFCF6;
+}
+
+.container {
+  max-width: 1521px;
+  margin: 0 auto;
+}
+
+.breadcrumb {
+  margin-bottom: 70px;
+}
+.breadcrumb ul {
+  display: flex;
+  gap: 0 28px;
+  align-items: center;
+}
+.breadcrumb ul li {
+  position: relative;
+  color: #373445;
+  font-family: "Shippori Mincho B1", serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 34.5px;
+  letter-spacing: 1.5px;
+}
+.breadcrumb ul li + li::before {
+  position: absolute;
+  content: "／ ";
+  left: -22px;
+}
+.breadcrumb ul li a {
+  color: #373445;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cta {
+  position: fixed;
+  right: 0;
+  top: 40%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+}
+
+.mt-14 {
+  margin-top: 14px;
+}
+
+h1 {
+  color: #417571;
+  text-align: center;
+  font-family: "A P-OTF Ryumin Pr6N";
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 46px;
+  letter-spacing: 2.24px;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+body {
+  word-break: break-word;
+  padding: 0;
+  margin: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+}
+
+a {
+  transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -ms-transition: all 0.3s ease-in-out 0s;
+}
+a:hover {
+  text-decoration: none;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+}
+
+img {
+  max-width: 100%;
+  border: none;
+  height: auto;
+}
+
+main {
+  display: block;
+}
+
+.height100 {
+  height: 100%;
+}
+
+.image-fit {
+  display: block;
+  overflow: hidden;
+}
+.image-fit img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.btn {
+  line-height: 100%;
+}
+
+.list-inline {
+  letter-spacing: -0.3em;
+}
+.list-inline .item-inline {
+  letter-spacing: normal;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.inline-middle .item-inline {
+  vertical-align: middle;
+}
+
+.relative-section {
+  position: relative;
+}
+
+.section-bg {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.font900 {
+  font-weight: 900;
+}
+
+.font800 {
+  font-weight: 800;
+}
+
+.font700 {
+  font-weight: 700;
+}
+
+.font600 {
+  font-weight: 600;
+}
+
+.font500 {
+  font-weight: 500;
+}
+
+.font400 {
+  font-weight: 400;
+}
+
+.font300 {
+  font-weight: 300;
+}
+
+.animated-delay2 {
+  -webkit-animation-delay: 0.3s;
+  -o-animation-delay: 0.3s;
+  -moz-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+.animated-delay3 {
+  -webkit-animation-delay: 0.6s;
+  -o-animation-delay: 0.6s;
+  -moz-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.animated-delay4 {
+  -webkit-animation-delay: 0.9s;
+  -o-animation-delay: 0.9s;
+  -moz-animation-delay: 0.9s;
+  animation-delay: 0.9s;
+}
+
+.animated-delay5 {
+  -webkit-animation-delay: 1.2s;
+  -o-animation-delay: 1.2s;
+  -moz-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
+
+.animated-delay6 {
+  -webkit-animation-delay: 1.5s;
+  -o-animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+
+.list-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-center {
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+}
+
+.flex-end {
+  align-items: flex-end;
+  -webkit-align-items: flex-end;
+}
+
+.flex-three .item-flex {
+  width: 33.33%;
+}
+
+.flex-two .item-flex {
+  width: 50%;
+}
+
+.flex-middle {
+  align-items: center;
+  -webkit-align-items: center;
+}
+
+:focus {
+  outline: none !important;
+}
+
+.toogle-menu {
+  border: 0 none;
+  display: none;
+  height: 23px;
+  width: 28px;
+  z-index: 999;
+  cursor: pointer;
+  outline: 0;
+  float: right;
+  background: none;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  padding: 0;
+}
+.toogle-menu span {
+  font-size: 0;
+  height: 3px;
+  width: 100%;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+.toogle-menu span::after, .toogle-menu span::before {
+  font-size: 0;
+  height: 3px;
+  width: 100%;
+  background: #000;
+  position: absolute;
+  left: 0;
+  content: "";
+}
+.toogle-menu span::after {
+  transform: translateY(310%);
+}
+.toogle-menu span::before {
+  transform: translateY(-310%);
+}
+.toogle-menu.exit span {
+  background: transparent;
+}
+.toogle-menu.exit span::before {
+  transform: translateY(0px) rotate(45deg);
+}
+.toogle-menu.exit span::after {
+  transform: translateY(0px) rotate(-45deg);
+}
+
+.on-sp {
+  display: none !important;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
+.header {
+  margin-bottom: 205px;
+}
+
+.footer {
+  margin-top: -72px;
+}
+
+/* pages */
+.company-content {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+.company-content h1 {
+  margin-bottom: 98px;
+}
+.company-content p {
+  margin-bottom: 16px;
+  color: #373445;
+  font-family: "A P-OTF Ryumin Pr6N";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0.9px;
+}
+.company-content p:nth-of-type(5) {
+  letter-spacing: 0.6px;
+}
+
+.terms-content {
+  padding-bottom: 52px;
+}
+.terms-content h1 {
+  margin-bottom: 97px;
+  color: #417571;
+  text-align: center;
+  font-family: "A P-OTF Ryumin Pr6N";
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 46px;
+  letter-spacing: 2.24px;
+}
+.terms-content h2 {
+  color: #417571;
+  font-family: "A P-OTF Ryumin Pr6N";
+  font-size: 29px;
+  font-weight: 400;
+  line-height: 46px;
+  letter-spacing: 2.03px;
+}
+.terms-content .chapter {
+  margin-bottom: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px 0;
+}
+.terms-content .chapter .text-box p {
+  margin: 0;
+  color: #373445;
+  font-family: "A P-OTF Ryumin Pr6N";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0.9px;
+}
+.terms-content .chapter .text-box p:first-child {
+  margin-bottom: 12px;
+  color: #373445;
+  font-family: "A P-OTF Ryumin Pr6N";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 46px;
+  letter-spacing: 1.54px;
+}
+.terms-content .chapter .text-box p:nth-child(3) {
+  margin-top: 14px;
+}
+.terms-content .chapter .text-box > ul {
+  list-style-type: decimal;
+  margin-left: 20px;
+  padding-left: 10px;
+}
+.terms-content .chapter .text-box > ul li {
+  color: #373445;
+  font-family: "A P-OTF Ryumin Pr6N";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0.9px;
+}
+.terms-content .chapter .text-box > ul li ul {
+  list-style-type: lower-alpha;
+  padding-left: 26px;
+}
+.terms-content .chapter-2 {
+  margin-top: -12px;
+}
+
+.privacy-content {
+  display: flex;
+  flex-direction: column;
+  gap: 64px 0;
+}
+.privacy-content h1 {
+  margin-bottom: 34px;
+}
+.privacy-content p {
+  color: #373445;
+  font-family: "A P-OTF Ryumin Pr6N";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0.9px;
+}
+.privacy-content .text-box p {
+  margin-bottom: 12px;
+  color: #373445;
+  font-family: "A P-OTF Ryumin Pr6N";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 46px;
+  letter-spacing: 1.54px;
+}
+.privacy-content .text-box p:last-child {
+  margin: 0;
+  color: #373445;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0.9px;
+}
+.privacy-content .text-box > ul {
+  list-style-type: decimal;
+  margin-left: 20px;
+  padding-left: 10px;
+}
+.privacy-content .text-box > ul li {
+  color: #373445;
+  font-family: "A P-OTF Ryumin Pr6N";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0.9px;
+}
+.privacy-content .text-box > ul li ul {
+  list-style-type: lower-alpha;
+  padding-left: 26px;
+}
+
+.caution-content h1 {
+  margin-bottom: 96px;
+}
+.caution-content ul {
+  margin-left: 30px;
+  list-style-type: normal;
+  list-style-position: inherit;
+}
+.caution-content ul li, .caution-content ul a {
+  color: #373445;
+  font-family: "A P-OTF Ryumin Pr6N";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0.9px;
+}
+.caution-content ul a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=main.css.map */
